@@ -22,11 +22,13 @@ function paintGreetings(username) {
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-function eraseUsername() {
+function eraseUsername(event) {
+  event.preventDefault();
   localStorage.removeItem("username");
   greeting.classList.add(HIDDEN_CLASSNAME);
   reLogin.classList.add(HIDDEN_CLASSNAME);
   loginForm.classList.remove(HIDDEN_CLASSNAME);
+  loginInput.value = "";
 }
 
 reLogin.addEventListener("click", eraseUsername);
