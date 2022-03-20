@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- 시간 -->
-    <h2 id="clock"></h2>
+    <h2 id="clock">00:00:00</h2>
     <!-- 유저이름 -->
     <form id="login-form" class="hidden">
       <input
@@ -24,8 +24,22 @@
       <span id="greeting" class="hidden"></span>
       <button id="reLogin" class="hidden">re</button>
     </form>
+    <!-- 투두리스트 -->
+    <form id="todo-form">
+      <input
+        type="text"
+        placeholder="Write a To Do and Press Enter."
+        required
+      />
+    </form>
+    <ul id="todo-list"></ul>
     <!-- 명언 -->
     <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <!-- 날씨 -->
+    <div id="weather">
       <span></span>
       <span></span>
     </div>
@@ -33,5 +47,7 @@
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <!-- <script src="js/weather.js"></script> -->
   </body>
 </html>

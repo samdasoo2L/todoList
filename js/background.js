@@ -18,4 +18,6 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `img/${randomImage}`;
 
+bgImage.className = "bgImage";
+
 document.body.appendChild(bgImage);
